@@ -1,0 +1,20 @@
+:root {
+    --main-color: #1D1616;
+    --dark-red: #8E1616;
+    --light-red: #D84040;
+    --off-white: #EEEEEE;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: var(--main-color);
+    color: var(--off-white);
+} 
+
+.heroSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
