@@ -1,20 +1,42 @@
 :root {
-    --main-color: #1D1616;
-    --dark-red: #8E1616;
-    --light-red: #D84040;
-    --off-white: #EEEEEE;
-    padding: 0;
-    margin: 0;
+    --bg-color: black;
+    --dark-accent: #135D66;
+    --light-accent: #77B0AA;
+    --text-color: #E3FEF7;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 500;
 }
 
 body {
-    background: var(--main-color);
-    color: var(--off-white);
-} 
+    background: var(--bg-color);
+    color: var(--text-color);
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
 
 .heroSection {
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
+.profilePicture {
+    align-self: center;
+    background-color: blue;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.textBox {
+    align-self: center;
+}
+
+.heroTitle {
+    color: var(--light-accent);
+}
