@@ -26,7 +26,6 @@ body {
 
 
 .profilePicture {
-    background-color: blue;
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -118,13 +117,13 @@ body {
     background-color: var(--dark-accent);
 }
 
-footer {
-    margin-top: auto;
-    margin-bottom: auto;
+.theFuture {
+    width: 80%
 }
 
 @media only screen and (min-width: 992px) {
 
+    .theFuture,
     .timeline,
     .timelineTitle,
     .collapsible,
