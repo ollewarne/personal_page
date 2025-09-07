@@ -13,7 +13,8 @@ body {
     width: 100%;
     margin: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .heroSection {
@@ -21,6 +22,18 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.timeline {
+    margin-top: 2rem;
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2rem;
+}
+
+.event {
+    padding: 5px 8px 5px 8px;
 }
 
 .profilePicture {
@@ -88,7 +101,12 @@ body {
 }
 
 @media only screen and (min-width: 992px) {
-    .collapsible, .textBox, .content {
+
+    .collapsible,
+    .textBox,
+    .content,
+    .timeline
+    {
         width: 50%;
     }
 }
