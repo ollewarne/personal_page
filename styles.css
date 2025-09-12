@@ -18,6 +18,15 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
+a {
+    text-decoration: none;
+    color: #EF7722;
+}
+
+a:hover {
+    color: pink;
+}
+
 header {
     display: flex;
     flex-direction: column;
