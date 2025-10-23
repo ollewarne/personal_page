@@ -1,8 +1,9 @@
 :root {
-    --bg-color: black;
-    --dark-accent: #135D66;
-    --light-accent: #77B0AA;
-    --text-color: #E3FEF7;
+    --bg-color: #000411;
+    --dark-accent: #274060;
+    --light-accent: #5EB1BF;
+    --text-color: #E1EFE6;
+    --orage-color: #EF7722;
     font-family: "Nunito Sans", sans-serif;
     font-weight: 500;
     height: 100%;
@@ -20,7 +21,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #EF7722;
+    color: var(--orage-color);
 }
 
 a:hover {
@@ -49,6 +50,7 @@ main {
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    border: 3px solid var(--dark-accent);
     margin-bottom: 1em;
     margin-top: 1em;
     align-self: center;
@@ -56,6 +58,11 @@ main {
 
 .heroTitle {
     color: var(--light-accent);
+    width: 250px;
+}
+
+.myName {
+    color: var(--orage-color);
 }
 
 .textBox {
@@ -82,17 +89,19 @@ main {
 
 .active,
 .collapsible:hover {
-    background-color: #ccc;
+    background-color: var(--light-accent);
     color: var(--dark-accent);
+    font-weight: 700;
 }
 
 .content {
-    background-color: var(--light-accent);
-    color: var(--dark-accent);
+    background-color: var(--dark-accent);
+    color: var(--light-accent);
     width: 80%;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+
 }
 
 .content>p {
@@ -153,7 +162,7 @@ main {
 
 footer {
     justify-self: center;
-    margin-bottom: 1em;
+    padding: 1.5em;
     grid-row: 3;
 }
 
